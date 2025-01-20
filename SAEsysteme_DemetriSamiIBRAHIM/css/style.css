@@ -1,0 +1,421 @@
+/* Tous ce qui sert aux polices */
+
+@font-face {
+    font-family: bold;
+    src: url(Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: light;
+    src: url(Poppins-Light.ttf);
+}
+
+/* Ce qui s'applique à  tous (prérequis personnel, pour que les balises a soit jolies etc.) */
+
+html {
+    height: 100%;
+}
+
+*,
+html {
+    font-family: regular;
+    margin: 0;
+    color: #354b86;
+    scroll-behavior: smooth !important;
+}
+
+a {
+    font-size: x-large;
+    color: #354b86;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: 0.5s ease-out;
+    font-weight: 900;
+    cursor: pointer;
+    color: #ffde59;
+}
+
+/* L'image principale + la nav bar */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1.5px solid;
+    border-color: #dee2e6;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.nav-top>div {
+    display: flex;
+    padding: 5px;
+}
+
+nav div h1 {
+    font-family: bold;
+    font-size: 2em;
+    border-bottom: 2px solid #ffde59;
+}
+
+.parts {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid;
+    border-color: #ffde59;
+}
+
+/* Tous ce qui correspond aux dropdown (menu déroulant) */
+/* Je préfère faire les menus déroulants avec un hover que avec un label personnelement */
+
+.dropdown {
+    position: sticky;
+    z-index: 1;
+    user-select: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown a:first-child {
+    position: relative;
+    z-index: -10;
+}
+
+.abtn {
+    font-family: regular;
+}
+
+.dropdown-content {
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    flex-direction: column;
+    margin-left: 18px;
+    border-bottom: 3px solid;
+    border-color: #ffde59;
+    left: 0;
+}
+
+.dropdown-content-right {
+    margin-right: 18px;
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    flex-direction: column;
+    margin-right: 18px;
+    border-bottom: 3px solid;
+    border-color: #ffde59;
+    right: 0;
+}
+
+.dropdown-content a {
+    font-family: light;
+    padding: 30px;
+    padding-top: 12.22px;
+    padding-bottom: 12.22px;
+    width: max-content;
+}
+
+.dropdown-content-right a {
+    font-family: light;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: max-content;
+}
+
+.dropdown-content a:hover {
+    transition: 0.5s ease-out;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.dropdown-content-right a:hover {
+    transition: 0.5s ease-out;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.dropdown:hover .dropdown-content {
+    animation: none;
+    display: flex;
+    animation-duration: 0.5s;
+    animation-name: animation;
+}
+
+.dropdown:hover .dropdown-content-right {
+    display: flex;
+    animation-duration: 0.5s;
+    animation-name: animation;
+}
+
+/* Animation */
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+        margin-top: 100%;
+        pointer-events: none;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 5px;
+        pointer-events: auto;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown:hover .dropdown-content a {
+    animation: fadeIn 1s ease forwards;
+}
+
+.dropdown:hover .dropdown-content-right a {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Img en dessous de la navbar */
+
+.top {
+    height: 60vh;
+    flex-direction: column;
+    display: flex;
+}
+
+.img-roulant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    background-image: url(img/Best-VM-for-Windows-10-841x281-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: 80% 50%;
+}
+
+.img-roulant div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #374162;
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+}
+
+.img-roulant h1 {
+    color: white;
+    font-size: 42px;
+    text-shadow: 2px 2px 5px #ffde59;
+}
+
+/* Contact */
+
+footer {
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+footer h2 {
+    color: white;
+    width: fit-content;
+    font-family: bold;
+    font-size: 1.5em;
+    border-bottom: 1px solid #ffde59;
+    margin: 20px 0;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer h1 {
+    color: white;
+    font-family: bold;
+    font-size: 2.5em;
+    border-bottom: 1px solid #ffde59;
+}
+
+footer h1:hover {
+    cursor: crosshair;
+}
+
+footer a {
+    color: white;
+    font-family: light;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+/* main (page centrale) */
+
+.mainh1 {
+    font-family: light;
+    letter-spacing: -1px;
+    font-size: 1.9em;
+    padding: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 0;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: #ffde59;
+    margin: auto;
+    margin-bottom: 50px;
+    width: fit-content;
+}
+
+main li {
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+.code {
+    margin-bottom: 20px !important;
+    font-style: italic;
+    font-weight: bold;
+}
+
+main article {
+    scroll-behavior: smooth;
+    scroll-margin-top: 10vw;
+}
+
+
+table {
+    background-color: #f8d596;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding:5px 0;
+    padding-left: 20px;
+    font-size: larger;
+    border: 1px solid black;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+    /* nav bar */
+
+    .nav-top {
+        margin: 0;
+    }
+
+    .dropdown {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .dropdown-content {
+        margin-left: 0px;
+    }
+
+    .dropdown-content-right {
+        margin-right: 0px;
+    }
+
+    .dropdown a {
+        font-size: x-small;
+        font-family: bold !important;
+    }
+
+    /* nav img */
+
+    .img-roulant h1 {
+        margin-top: 10px;
+        font-size: x-large;
+    }
+
+    /* Main */
+
+    .main {
+        padding-bottom: 0;
+    }
+
+    .mainh1 {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 1.5em !important;
+    }
+
+    .main h1 {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0px;
+    }
+
+    .code {
+        font-size: 0.9em !important;
+    }
+
+    table {
+        font-size: x-small;
+    }
+
+    /* Contact */
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer h1 {
+        font-size: 1.5em;
+    }
+
+    footer h2 {
+        font-size: 1.1em;
+    }
+
+    footer div {
+        align-items: flex-start;
+    }
+}

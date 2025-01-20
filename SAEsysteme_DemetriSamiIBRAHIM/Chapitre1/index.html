@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAE-S1.03 - Installer Une Machine Virtuelle</title>
+    <meta name="description" content="Cette SAE, à été donnée afin d'apprendre administrer, configurer et utiliser des Machines Virtuelles.">
+    <link rel="icon" type="image/x-icon" href="/virtual-machines.256x232.png">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+    <!-- Header : Haut du site -->
+    <nav>
+        <div class="nav-top">
+            <div>
+                <h1>SAE-S1.03 - Installer & Administrer Une Machine Virtuelle</h1>
+            </div>
+        </div>
+        <div class="parts">
+            <div class="dropdown">
+                <a href="/index.html" class="abtn">Accueil</a>
+                <div class="dropdown-content">
+                    <a href="/index.html#article1">Notre Binôme</a>
+                    <a href="/index.html#article2">Nos Missions</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="/Chapitre1/index.html" class="abtn">Installation & Configuration MV</a>
+                <div class="dropdown-content">
+                    <a href="/Chapitre1/index.html#article1">Le contexte</a>
+                    <a href="/Chapitre1/index.html#article2">Pourquoi installer une machine virtuelle</a>
+                    <a href="/Chapitre1/index.html#article2">Différence entre émulateurs, simulateurs & outils de virtualisation </a>
+                    <a href="/Chapitre1/index.html#article3">Choix d'installer VirtualBox </a>
+                    <a href="/Chapitre1/index.html#article4">Téléchargement de VirtualBox</a>
+                    <a href="/Chapitre1/index.html#article5">Création de la Machine Virtuelle</a>
+                    <a href="/Chapitre1/index.html#article6">Création d'utilisateur</a>
+                    <a href="/Chapitre1/index.html#article6">Installation & Configuration d'un service WEB</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="/mission3/index.html" class="abtn">Tutoriels</a>
+                <div class="dropdown-content-right">
+                    <a href="/mission3/index.html#article1">Tutoriel de Demetri</a>
+                    <a href="/mission3/index.html#article2">Tutoriel de Hugo</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="/rapport/index.html" class="abtn">Rapport</a>
+                <div class="dropdown-content-right">
+                    <a href="/rapport/index.html#article1">Outils utilisés</a>
+                    <a href="/rapport/index.html#article2">Analyse des données</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="top">
+        <div class="img-roulant" id="img-roulant">
+            <h1>Chapitre<br> I</h1>
+        </div>
+    </header>
+
+
+    <!-- Main : Contenu principal -->
+        <main>
+            <article id="article1">
+                <h1 class="mainh1">LE CONTEXTE</h1>
+                <div class="scrollanimation scrollanimation2">
+                    <div class="category category-1">
+                        <div>
+                            <p>La mission 1 a pour but d'analyser les données de l'entreprise KDou via un fichier Excel
+                                qui nous a été confié, pour donner une image plus "éco-friendly" pour mieux se
+                                positionner par rapport à ses concurrents et augmenter son bénéfice.</p>
+                            <p class="code"></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="article2">
+                <h1 class="mainh1">POURQUOI INSTALLER UNE MACHINE VIRTUELLE </h1>
+                <div class="scrollanimation scrollanimation2">
+                    <div class="category category-1">
+                        <div>
+                            <p>
+                                    Une machine virtuelle peut être utilisée pour tester des programmes qui ne sont pas sécurisés avant de les installer sur un PC. Cela permet d'éviter tout risque d'infection ou de corruption de données sur le système principal. 
+                            </p>         
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="article2">
+                <h1 class="mainh1">DIFFERENCE ENTRE EMULATEURS, SIMULATEURS ET OUTILS DE VIRTUALISATION </h1>
+                <div class="scrollanimation scrollanimation2">
+                    <div class="category category-1">
+                        <div>
+                            <p>
+                                Les émulateurs, simulateurs et outils de virtualisation sont des technologies permettant de reproduire ou d’imiter des systèmes informatiques, mais chacune fonctionne différemment.
+                            </p>
+                            <p>
+                                Un émulateur imite de manière précise un autre système, permettant d’exécuter des programmes conçus pour ce système sur un autre matériel ou logiciel. Par exemple, un émulateur de console de jeux permet de jouer à des jeux vidéo sur un PC.
+                            </p>
+                            <p>    
+                                Un simulateur, quant à lui, reproduit le comportement ou les résultats d’un système sans tenter de copier toutes ses fonctions exactes. Il est souvent utilisé pour des tests ou des formations, comme un simulateur de vol qui recrée l’expérience de piloter un avion sans le matériel réel.
+                            </p>
+                            <p>    
+                                Enfin, un outil de virtualisation permet de créer des machines virtuelles, c’est-à-dire des systèmes d’exploitation ou des ordinateurs virtuels qui fonctionnent sur un seul ordinateur physique. Par exemple, avec des outils comme VirtualBox, on peut exécuter plusieurs systèmes d'exploitation simultanément sur un même ordinateur.    
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="article3">
+                <h1 class="mainh1">CHOIX D'INSTALLER VIRTUALBOX :</h1>
+                <div class="scrollanimation scrollanimation2">
+                    <div class="category category-1">
+                        <div>
+                                <p>
+                                    VirtualBox a été choisi en raison de sa gratuité et de ses bonnes performances par rapport à d'autres logiciels payants.  
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="article4">
+                <h1 class="mainh1">TELECHARGEMENT DE VIRTUALBOX</h1>
+                <div class="scrollanimation scrollanimation2">
+                    <div class="category category-1">
+                        <div>
+                            <p>
+                                Pour installer VirtualBox, ouvrez le site officiel, puis cliquez sur "Downloads" pour télécharger le fichier d'installation.   
+                            </p>
+                            <img src="img\TDV1.png"/>
+                            <p>
+                                Selon le système d’exploitation que vous utilisez, sélectionnez la version correspondante. Si vous utilisez Windows, cliquez sur l'option "Windows hosts" et téléchargez le fichier d'installation.  
+                            </p>
+                            <img src="img\TDV2.png"/>
+                            <p>
+                                Cliquez sur "Suivant" après téléchargement. 
+                            </p>
+                            <img src="img\TDV3.png"/>
+                            <p>
+                                Et accepté les contrats utilisateurs pour utilisation. 
+                            </p>
+                            <img src="img\TDV4.png"/>
+                            <p>
+                                choisissez le disque "C:" comme destination pour l'installation de VirtualBox 
+                            </p>
+                            <img src="img\TDV5.png"/>
+                                Cliquez sur "Oui" pour permettre à l'installation de continuer.
+                            </p>
+                            <img src="img\TDV6.png"/>
+                            <img src="img\TDV7.png"/>
+                            <p>
+                                Puis cliquez sur suivant pour continuer. 
+                            </p>
+                            <img src="img\TDV8.png"/>
+                            <img src="img\TDV9.png"/>
+                            <p>
+                                Une fois toutes les étapes complétées, cliquez sur "Installation" et l’installation est terminé.  
+                            </p>
+                            <img src="img\TDV10.png"/>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="article4">
+                <h1 class="mainh1">CHOIX DU SYSTEME D'EXPLOITATION POUR LA MACHINE VIRTUELLE</h1>
+                <div class="scrollanimation scrollanimation2">
+                    <div class="category category-1">
+                        <div>
+                            <p>
+                                Nous avons choisi Linux comme système d'exploitation pour la machine virtuelle, car il est gratuit et accessible à tous. De plus, il est simple à utiliser et, grâce à sa nature open-source, permet aux utilisateurs de le personnaliser et de l'adapter selon leurs besoins. 
+
+                                Aller sur site “Ubuntu for deskyop” pour télécharger le fichier Linux 
+                                
+                                Cliquez sur “Download Ubuntu Desktop
+                            </p>
+                            <img src="img\CDS1.png" />
+                            <p>
+                                Cliquez sur “Download 24.04.1 LTS”
+                            </p>
+                            <img src="img\CDS2.png"/>
+                            <p>
+                                Cliquez sur l'option qui correspond à votre situation (par exemple "Étudiant"). Ensuite, acceptez les conditions d'utilisation pour poursuivre le téléchargement.  
+                            </p>
+                            <img src="img\CDS3.png"/>
+                            <p>
+                                Attendre la fin d’installation pour obtenir le fichier .iso (fichier de système d’exploitation)
+                            </p>
+                            <img src="img\CDS4.png"/>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="article5">
+                <h1 class="mainh1">CREATION DE LA MACHINE VIRTUELLE :</h1>
+                <div class="scrollanimation scrollanimation2">
+                    <div class="category category-1">
+                        <div>
+                            <p>
+                                Ouvrie Oracle VirtualBox.
+
+                                Cliquez sur "Nouveau" pour commencer la création de la machine virtuelle. 
+                            </p>
+                            <img src="img\CDM1.png"/>
+                            <p>
+                                Nous allons définir le nom de la machine comme "ubuntu", comme demandé en cliquant sur “Nom”. Ensuite, choisissez le lieu local pour faciliter la gestion du système en cliquant “Folder” puis sur autres. Puis, implémenté le fichier .iso que nous avons utilisons télécharger en cliquant “ISO Image” puis sur autres afin de l'utiliser pour installer le système d'exploitation sur la machine virtuelle. Selon notre utilisation cliquer sur “Type” Linux, puis sur “Subtype” Ubuntu et “Version” Ububtu(64-bit). Enfin, cliquez sur "Skip Unattended Installation" pour faciliter la gestion de certaines tâches automatiquement, sans que nous ayons besoin d’agir. Puis appuyez sur suivante . 
+                            </p>
+                            <img src="img\CDM2.png"/>
+                            <p>
+                                Ensuite, nous allons allouer la mémoire vive. En fonction des besoins, chaque utilisateur peut choisir la quantité de mémoire à attribuer. Nous allons allouer 16 GB, ce qui convient à la plupart des utilisations d’entreprises. Ensuite, pour la quantité de cœurs processeur, nous allons en attribuer 7, tant que cela reste dans la zone verte, ce qui garantit de bonnes performances. Une fois ces réglages effectués, cliquez sur "Suivant" pour continuer. 
+                            </p>
+                            <img src="img\CDM4.png"/>
+                            <p>
+                                Ensuite, nous arrivons à la configuration du disque dur. Il n'est pas nécessaire d'allouer de l'espace supplémentaire pour l'instant, car cela évoluera en fonction de notre utilisation. Par conséquent, il n'y a pas de modifications à apporter à cette étape. Nous passons à l'étape suivante. Cliquez sur  ”Finish” pour Terminer.
+                            </p>
+                            <img src="img\CDM5.png"/>
+                            <p>
+                                Maintenant, vous pouvez démarrer la machine virtuelle. Cliquez sur "Démarrer" pour utiliser la machine virtuelle. 
+                            </p>
+                            <img src="img\CDM6.png"/>
+                            <p>
+                                Maintenant ,on est au menu grub puis appuyez entrée sur la première option  
+                            </p>
+                            <img src="img\CDM7.png"/>
+                            <p>
+                                Ensuite un installateur de Ubuntu est lancé, choisir la langue selon les utilisateurs, nous avons choisi la langue Français puis cliquez sur suivant. 
+                            </p>
+                            <img src="img\CDM8.png"/>
+                            <p>
+                                Choisir les accessibilités selon les utilisateurs, nous avons choisi “saisie” touches rémanentes et “Pointage et clic de souris” Touches de la souris, puis cliquez sur suivant. 
+                            </p>
+                            <img src="img\CDM9.png"/>
+                            <p>
+                                Choisir la disposition du clavier selon les utilisateurs, nous avons choisi la langue Français et tester sur la barre de texte, puis cliquez sur suivant.  
+                            </p>
+                            <img src="img\CDM10.png"/>
+                            <p>
+                                Choisir la connecter à internet selon les utilisateurs, nous avons choisi utiliser la connexion clablée ce qui installe des applications, puis cliquez sur suivant. 
+                            </p>
+                            <img src="img\CDM11.png"/>
+                            <p>
+                                Choisir selon les utilisateurs, nous avons cmiquez sur la mise à jour puis cliquez sur suivant.  
+                            </p>
+                            <img src="img\CDM12.png"/>
+                            <p>
+                                Choisir selon les utilisateurs, nous avons choisi Installation interactive pour les débutants puis cliquez sur suivant. 
+                            </p>
+                            <img src="img\CDM13.png"/>
+                            <p>
+                                Choisir selon les utilisateurs, nous avons choisi Installation des logiciels pour la compatibilité des logiciels puis cliquez sur suivant. 
+                            </p>
+                            <img src="img\CDM14.png"/>
+                            <p>
+                                Choisir selon les utilisateurs, nous avons choisi Effacer le disque, attention s’il existe déjà des choses dans votre disque ce qu’il pourrait être effacer puis cliquez sur suivant. 
+                            </p>
+                            <img src="img\CDM15.png"/>
+                            <p>
+                                Ensuite, nous allons créer notre compte utilisateur en remplissant les champs demandés. Dans "Votre nom", saisissez "admin_Gr01_Binome05" comme indiqué. Pour les champs "Le nom de votre ordinateur" et "Nom d'utilisateur" sera automatiquement complété. Ensuite, dans "Mot de passe", entrez "LuneSOS123!" et confirmez-le en le saisissant à nouveau dans "Confirmez". Une fois ces informations saisies, cliquez sur "Suivant" pour continuer. 
+                            </p>
+                            <img src="img\CDM16.png"/>
+                            <p>
+                                Choisir selon les utilisateurs, nous avons choisi Europe/Paris puis cliquez sur suivant. 
+                            </p>
+                            <img src="img\CDM17.png"/>
+                            <p>
+                                Enfin, nous vérifions les informations avons d’installer puis cliquez sur suivant. 
+                            </p>
+                            <img src="img\CDM18.png"/>
+                            <img src="img\CDM19.png"/>
+                            <p>
+                               Pour information, nous avons des logs qui pourraient nous servir en cas de problème sur installation .  
+                            </p>
+                            <img src="img\CDM21.png"/>
+                            <p>
+                                Une fois l'installation terminée et que vous vous trouvez sur cette fenêtre, cliquez sur "Redémarrer maintenant" pour redémarrer la machine virtuelle et appliquer les mises à jour nécessaires. 
+                            </p>
+                            <img src="img\CDM22.png"/>
+                            <p>
+                                Une fois terminé, on retrouve la liste des utilisateurs, choisissez ce qui vous utilisez mettre le mot passe.  
+                            </p>
+                            <img src="img\CDM23.png"/>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="article6">
+                <h1 class="mainh1">CREATION D'UTILISATEUR</h1>
+                <div class="scrollanimation scrollanimation2">
+                    <div class="category category-1">
+                        <div>
+                            <p>
+                                Nous devons aller dans le Terminal pour créer nos utilisateurs.
+                            </p>
+                            <img src="img\CD4.png" />
+                            <p>
+                                Dans cet espace, nous pouvons utiliser des commandes telles que sudo useradd nom_utilisateur pour ajouter de nouveaux utilisateurs à notre système. Après avoir créé l'utilisateur, il est important de définir un mot de passe en utilisant la commande sudo passwd nom_utilisateur pour sécuriser l'accès et autres informations.  
+                            </p>
+                            <img src="img\CD1.png"/>
+                            <p>
+                                Enfin ,nous devrons ajouter dabns le même groupe. 
+                            </p>
+                            <img src="img\CD2.png"/>
+                            <p>
+                                Attendre la fin d’installation pour obtenir le fichier .iso (fichier de système d’exploitation)
+                            </p>
+                            <img src="img\CD3.png"/>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="article7">
+                <h1 class="mainh1">Installation et configuration d’un service web</h1>
+                <div class="scrollanimation scrollanimation2">
+                    <div class="category category-1">
+                        <div>
+                            <p>
+                                La première étape consiste à installer le serveur web Apache sur votre machine. Apache est un serveur web populaire qui permet d'héberger des sites web avec la commande sudo apt install apache2 -y
+                            </p>
+                            <img src="img\S1.png" />
+                            <p>
+                                Une fois Apache installé, nous devons démarrer le service Apache pour qu'il fonctionneavec la commande sudo systemctl start apache2.
+                            </p>
+                            <p>
+                                Il est essentiel de s'assurer qu'Apache redémarre automatiquement lors du prochain démarrage du système en tapons la commande sudo systemctl enable apache2
+                            </p>
+                            <p>
+                                Pour vérifier si Apache fonctionne correctement, vous pouvez consulter son état à l'aide de la commande suivante sudo systemctl status apache2
+                            </p>
+                            <p>
+                                Si votre machine utilise un pare-feu (comme ufw), vous devez autoriser le trafic HTTP pour permettre aux utilisateurs d'accéder à votre site web via un navigateur en tapant la commande sudo ufw allow 'Apache'
+                            </p>
+                            <img src="img\S2.png" />
+                            <img src="img\S3.png" />
+                            <img src="img\S4.png" />
+                            <p>
+                                Si vous souhaitez également permettre les connexions sécurisées HTTPS, vous devez autoriser le port 443 en plus du port 80, nous devons taper la commandesudo ufw allow 'Apache Full'
+                            </p>
+                            <img src="img\S5.png" />
+                            <p>
+                                Pour activer le pare-feu,nous devons taper sudo ufw enable puis sudo ufw reload pour modifié les règles du pare-feu
+                            </p>
+                            <img src="img\S6.png" />
+                            <p>
+                                Enfin, nous devons taper la commande hostname -I pour obtenir l'adresse IP de votre machine sur un réseau local 
+                            </p>
+                            <img src="img\S7.png" />
+                            <P>
+                                Installer Snap
+                            </P>
+                            <img src="img\S8.png" />
+                            <P>
+                                Installer WebStorm avec Snap
+                            </P>
+                            <img src="img\S9.png" />
+                            <P>
+                                Lancer WebStorm
+                            </P>
+                            <img src="img\S10.png" />
+                      
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <!-- Footer : bas de page -->
+        <footer>
+            <div>
+                <h1>SAE-S1.03 - Page de Rapport</h1>
+            </div>
+            <div>
+                <h2>CONTACT</h2>
+                <div>
+                    <a>07 60 36 84 75</a>
+                    <a>demetri.sami-ibrahim@etu.u-paris.fr</a>
+                    <a>06 38 01 66 80</a>
+                    <a>hugo.jiang@etu.u-paris.fr</a>
+                    <a>143 Av. de Versailles</a>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

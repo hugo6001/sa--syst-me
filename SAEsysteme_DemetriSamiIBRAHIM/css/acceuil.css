@@ -1,0 +1,129 @@
+/* Toutes les scollanimation sont "les bloques" avec les images dedans (images ou table) avec du texte en dessous et une balise a */
+
+.txt-equipe667 {
+    text-align: justify;
+    margin: 5vw;
+}
+
+.scrollanimation {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.scrollanimation div {
+    animation: appear ease-out;
+    height: max-content;
+    width: 27vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+}
+
+.scrollanimation2 div {
+    animation: appear ease-out;
+    height: max-content;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+}
+
+.scrollanimation div img {
+    height: 40vh;
+    width: auto;
+    object-fit: cover;
+}
+
+.scrollanimation div div {
+    display: flex;
+    width: 100%;
+    text-align: justify;
+}
+
+.scrollanimation div div h2 {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: fit-content;
+}
+
+.scrollanimation div div p {
+    margin: 30px;
+    margin-bottom: 0;
+    font-size: large;
+}
+
+.scrollanimation div div a {
+    width: fit-content;
+    margin: 30px;
+    cursor: pointer;
+    border-bottom: 3px solid;
+    border-color: #ffde59;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0.3;
+        transform: translateY(150px);
+    }
+
+    35% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+
+@media screen and (min-width: 50px) and (max-width: 800px) {
+
+    .resultat-div div {
+        padding: 20px;
+    }
+
+    .resultat-div {
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .actumain p {
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+    }
+
+    .ouverture-div {
+        position: relative;
+        top: 50px !important;
+        padding: 25px !important;
+        margin: 25px !important;
+    }
+
+    .ouverturemain div {
+        margin: 10px !important;
+        padding: 10px !important;
+    }
+
+    .ouverturemain p {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    footer {
+        margin-top: none !important;
+    }
+
+    /* scroll animation */
+    .scrollanimation {
+        flex-direction: column !important;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .scrollanimation div {
+        width: auto;
+        margin-top: 20px;
+    }
+}
